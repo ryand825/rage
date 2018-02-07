@@ -1,0 +1,7 @@
+.Nav-bar {
+    background-color: lightslategray;
+    height: 150px;
+    padding: 20px;
+    color: gray;
+    border-bottom: 1px solid black;
+  }
