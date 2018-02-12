@@ -1,7 +1,21 @@
-.Nav-bar {
-    background-color: lightslategray;
-    height: 150px;
-    padding: 20px;
-    color: gray;
+.nav-bar {
+	align-items: center;
+	background-color: lightgray;
+	box-sizing: border-box;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+    padding: 15px;
     border-bottom: 1px solid black;
-  }
+}
+
+.nav-logo-wrapper {
+    align-items: center;
+    display: flex;
+}
+
+  .nav-rage-logo {
+	height: 160px;
+	margin-right: 16px;
+	width: auto;
+}
