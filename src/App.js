@@ -6,9 +6,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <TopNav />
+        <TopNav />
         <p className="App-intro">
-        test
+          test
         </p>
       </div>
     );
