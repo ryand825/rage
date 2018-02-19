@@ -22,14 +22,17 @@ export default class TopNav extends Component {
                             src={rageCorps}
                         />
                     </div>
-                    <div className="menu">
-                        <p>HOME</p>
-                        <p>STORE</p>
-                        <p>ABOUT</p>
-                    </div>
-                    <label>
-                        <span className="hamburger"></span>
+                    <label for="open">
+                        <span className="hamburger"></span>    
                     </label>
+                    <input type="checkbox" name="" id="open" />
+                    <div className="menu">
+                    <p>HOME</p>
+                    <p>STORE</p>
+                    <p>ABOUT</p>
+                    </div>
+
+
                 </div>
             </header>
         )

@@ -1,14 +1,22 @@
 header {
     width: 100vw;
-    max-height: 140px;
+    /* max-height: 140px; */
     background-color: white;
-    border-bottom: 1px solid lightgray;
     display: table;
+    border-bottom: 1px solid lightgray;
+}
+
+input{
+    display: none;
 }
 
 p{
     display: inline-block;
     margin-right: 1.5vw;
+}
+
+hr{
+    display: none;
 }
 
 img {
@@ -18,14 +26,13 @@ img {
 }
 
 .nav-bar{
-    margin: auto;
     line-height: 0;
-    max-height: 140px;
+    /* max-height: 140px; */
     width: 95%;
 }
 
 .nav-title-wrapper {
-    float: left;
+    /* float: left; */
     display: inline-block;
 }
 
@@ -35,6 +42,7 @@ img {
     color: rgb(110, 3, 3);
     font-size: 3.5vw;
     font-family: 'Cabin Sketch', cursive;
+    -webkit-transition: all .3s ease;
 }
 
   label{
@@ -42,7 +50,6 @@ img {
     top: 10px;
     float: right;
     position: relative;
-
       /* top: -5vw;
       right: 200px; */
       cursor: pointer;
@@ -57,7 +64,7 @@ img {
 }
 
 .hamburger:before{
-    content: ' ';
+    content: '';
     position: absolute;
     width: 35px;
     height: 6px;
@@ -66,7 +73,7 @@ img {
     background: white;
 }
 .hamburger:after{
-    content: ' ';
+    content: '';
     position: absolute;
     width: 35px;
     height: 6px;
@@ -80,9 +87,44 @@ img {
         height: 50px;
     }
 
+    .nav-title-wrapper{
+        float: none;
+        
+
+    }
+
+    input[type="checkbox"]:checked + .menu{
+        height: 122px;
+        border-top: solid 1px lightgray;
+
+        -webkit-transition: all .3s ease;
+    }
+
+    hr{
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        display: block;
+        color: lightgray;
+        width: 100%;
+        size: 1px;
+        /* transform: translateX(-1vw); */
+        /* margin-right: -3.2%; */
+
+    }
+
     .menu{
-        display: none;
-        font-size: 5vw;   
+        display: flex;
+        flex-direction: column;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .menu>p{
+        text-align: right;
+        /* display: block; */
+        font-size: 20px;
+        display: inline-block;
     }
 
     label{
