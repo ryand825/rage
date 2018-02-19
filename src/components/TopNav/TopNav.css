@@ -1,30 +1,147 @@
-.nav-bar {
+header {
+    width: 100vw;
+    max-height: 140px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    display: table;
+}
+
+p{
+    display: inline-block;
+    margin-right: 1.5vw;
+}
+
+img {
+    height: 7vw;
+    max-height: 130px;
+    width: auto;
+}
+
+.nav-bar{
+    margin: auto;
+    line-height: 0;
+    max-height: 140px;
+    width: 95%;
+}
+
+.nav-title-wrapper {
+    float: left;
+    display: inline-block;
+}
+
+.menu{
+    display: inline-block;
+    margin-left: 2vw;
+    color: rgb(110, 3, 3);
+    font-size: 3.5vw;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+  label{
+    display: none;
+    top: 10px;
+    float: right;
+    position: relative;
+
+      /* top: -5vw;
+      right: 200px; */
+      cursor: pointer;
+  }
+
+.hamburger{
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 30px;
+    background: gray;
+}
+
+.hamburger:before{
+    content: ' ';
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    top: 6px;
+    left: 0;
+    background: white;
+}
+.hamburger:after{
+    content: ' ';
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    top: 18px;
+    left: 0;
+    background: white;
+}
+
+@media (max-width: 600px){
+    img {
+        height: 50px;
+    }
+
+    .menu{
+        display: none;
+        font-size: 5vw;   
+    }
+
+    label{
+        display: inline;
+    }
+}
+
+/* .nav-bar {
 	align-items: center;
 	background-color: white;
 	box-sizing: border-box;
-	color: #ffffff;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
     padding: 15px;
     border-bottom: 1px solid lightgray;
     height: 10vw;
     max-height: 140px;
+    z-index: 1;
 }
 
-.nav-menu-wrapper{
+.desk-menu{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 35%;
     color: rgb(110, 3, 3);
     font-size: 3.5vw;
     font-family: 'Cabin Sketch', cursive;
+}
+
+.mobile-menu{
+    z-index: .5;
+    justify-content: flex-end;
+    background-color: white;
+    top: 10vw;
+    width: 100vw;
+    font-size: 3.5vw;
+    font-family: 'Cabin Sketch', cursive;
+    transition: height 1s;
+    border-left: solid 1px lightgray;
+    display: block;
+}
+
+.mobile-menu:hover{
+    height: 20px;
+}
+
+.mobile-menu > div{
+    height: 100%;
+    color: green;
+    border-bottom: 1px solid lightgray;
+    padding-left: 10px;
 }
 
 .nav-title-wrapper {
     align-items: center;
     display: flex;
     box-sizing: border-box;
+    margin-right: 20px;
 }
 
   .nav-rage-logo {
@@ -37,4 +154,4 @@
     max-height: 130px;
     height: 7vw;
 	width: auto;
-}
+} */
